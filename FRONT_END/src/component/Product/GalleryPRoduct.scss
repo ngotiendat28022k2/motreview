@@ -1,0 +1,15 @@
+.Box-GalleryPRoduct{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.Item-Box-GalleryPRoduct{
+    max-width: 500px;
+
+}
+
+
+.Image-Item-Box-GalleryPRoduct{
+    width: 100%;
+}

@@ -1,0 +1,63 @@
+.checkout-container {
+    width: 100%;
+    margin: 0 auto;
+  }
+  
+  .checkout-header {
+    width: 100%;
+    background-color: #f4f4f4;
+    margin-bottom: 20px;
+  }
+  
+  .checkout-steps {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 13px;
+    max-width: 1408px;
+    height: 86px;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;
+  
+    @media (max-width: 1408px) {
+      grid-template-columns: repeat(5, 1fr);
+      max-width: 342px;
+      height: 62px;
+    }
+  
+    @media (min-width: 768px) {
+      grid-template-columns: 146px 75px 103px 75px 153px;
+    }
+  
+    @media (min-width: 992px) {
+      grid-template-columns: 146px 72px 108px 73px 153px;
+    }
+  }
+  
+  .checkout-link {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: 14px;
+    color: inherit;
+    text-decoration: none;
+    gap: 8px;
+  
+    .checkout-icon {
+      font-size: 20px;
+      width: 30px;
+      height: 30px;
+      background-color: red;
+      border-radius: 50%;
+      color: white;
+    }
+  
+    .font-weight-medium {
+      font-weight: 500;
+    }
+  }
+  
+  .checkout-divider {
+    font-size: 30px;
+  }
+  

@@ -1,0 +1,39 @@
+
+.latest_product_inner {
+    animation: fadeIn 0.5s ease-in-out;
+}
+.products_category{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.pagination{
+    gap: 5px;
+    margin-bottom: 100px;
+}
+.no-products {
+    text-align: center;
+    font-size: 25px;
+    color: red;
+    padding: 40px;
+}
+
+.latest_product_inner.loading {
+    animation: fadeOut 0.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}

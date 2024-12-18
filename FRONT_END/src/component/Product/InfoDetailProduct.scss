@@ -1,0 +1,201 @@
+.box-size{
+  display: flex;
+  align-items: center;
+
+  .product-size{
+      padding: 6px 35px;
+      border: 1px solid #00000017;
+      color: #333;
+      border-radius: 10px;
+      font-size: 16px;
+      margin-left: 8px;
+      cursor: pointer;
+
+      &:hover{
+          color: #345457;
+          border-color: #345457;
+      }
+      &.active{
+          color: #345457 !important;
+      }
+  }
+
+}
+.box {
+  width: 100%;
+  padding: 2em;
+  text-align: center;
+}
+
+.quantity {
+  position: relative;
+  display: inline-block;
+  color: #7f7f7f;
+
+    input[type="number"] {
+    transition: border .3s ease-in-out, color .3s ease-in-out;
+    -webkit-appearance: textfield;
+    -moz-appearance: textfield;
+      appearance: textfield;
+    font-family: Arial, sans-serif;
+        font-size: 14px;
+    line-height: 24px;
+        font-weight: 700;
+        box-shadow:	none;
+        outline: none; 
+        width: 42px;
+        height:	34px;
+        text-align:	center;
+        float: right;
+    border:	1px solid #dcdcdc;
+    background-color: #fff;
+        color: #342f2f;
+
+        &:focus {
+          border-color: #57b8f6 !important;
+        }
+
+        &:hover {
+          border-color: #a5a5a5;
+        }
+    }
+
+    &-button {
+      width: 39px;
+        height: 34px;
+        display: block;
+        float: right;
+        position:	relative;
+    cursor: pointer;
+
+      &::before,
+      &::after {
+      position: absolute;
+      top: calc(50% - 1px);
+      left: calc(50% - 7px);
+      content: '';
+      width: 14px;
+      height: 2px;
+      background-color: currentColor;
+      display: block;
+      }
+    }
+
+    &-remove {
+      &::after {
+      display: none;
+      }
+    }
+
+    &-add {
+      &::after {
+      transform: rotate(90deg);
+      }
+    }
+}
+
+.flex{
+display: flex;
+}
+
+.space-between{
+justify-content: space-between;
+}
+
+.item-start{
+align-items: flex-start;
+}
+
+.w-70{
+width: 70%;
+}
+
+.w-25{
+width: 25%;
+}
+
+.w-100{
+width: 100%;
+}
+
+.display-block{
+display: inline-block;
+}
+
+.subimg-detailproduct{
+max-height: 485px;
+overflow: hidden;
+overflow-y: auto;
+}
+.subimg-detailproduct::-webkit-scrollbar {
+width: 6px; /* Độ rộng của thanh cuộn */
+}
+
+.subimg-detailproduct::-webkit-scrollbar-track {
+background: #d1d1d1; /* Màu nền của thanh cuộn */
+border-radius: 10px;
+}
+
+.subimg-detailproduct::-webkit-scrollbar-thumb {
+background: #cd2e52; /* Màu của thanh cuộn */
+border-radius: 10px;
+}
+
+.subimg-detailproduct::-webkit-scrollbar-thumb:hover {
+background: #555; /* Màu của thanh cuộn khi di chuột vào */
+}
+
+.btn-productdetail{
+background-color: #345457;
+padding: 10px 25px;
+border-radius: 10px;
+color: #fff !important;
+font-size: 14px;
+border: 1px solid #345457;
+font-weight: 600;
+transition: background-color 0.5s ease;
+cursor: pointer;
+}
+
+.btn-productdetail:hover {
+background-color: #fff;
+color: #cd2e52 !important;
+}
+.description-product img {
+  width: 100%; 
+  height: auto;  
+
+}
+.description-product {
+  background-color: #345457;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+
+select.sorting {
+  outline: none;
+  border: 1px solid #eee;
+  width: 100%;
+  padding: 10px 5px;
+  background-color: #f9f9f9;
+  font-size: 16px;
+  color: #333;
+  border-radius: 4px;
+  appearance: none; /* Loại bỏ mũi tên mặc định của trình duyệt */
+}
+
+select.sorting option {
+  padding: 10px;
+  background-color: #ffffff;
+  color: #333;
+  font-size: 14px;
+  border-bottom: 1px solid #eee;
+}
+
+/* Thêm hiệu ứng hover */
+select.sorting option:hover {
+  background-color: #f1f1f1;
+  color: #000;
+}
